@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline Ticket Prices</title>
+    <link rel="stylesheet" href="prize.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Airline Ticket Prices</h1>
+    </header>
+    <main>
+      <div class="ticket">
+        <h2>Economy Class</h2>
+        <p>Enjoy affordable prices and basic amenities.</p>
+        <h3>$200</h3>
+        <form action="checkout.php" method="post">
+          <input type="hidden" name="class" value="economy" />
+          <label for="quantity_economy">Quantity:</label>
+          <input
+            type="number"
+            id="quantity_economy"
+            name="quantity_economy"
+            min="1"
+            value="1"
+          />
+          <button type="submit">Buy Ticket</button>
+        </form>
+      </div>
+      <div class="ticket">
+        <h2>Business Class</h2>
+        <p>Experience luxury travel with extra comfort and services.</p>
+        <h3>$500</h3>
+        <form action="checkout.php" method="post">
+          <input type="hidden" name="class" value="business" />
+          <label for="quantity_business">Quantity:</label>
+          <input
+            type="number"
+            id="quantity_business"
+            name="quantity_business"
+            min="1"
+            value="1"
+          />
+          <button type="submit">Buy Ticket</button>
+        </form>
+      </div>
+      <div class="ticket">
+        <h2>First Class</h2>
+        <p>Indulge in premium services and unparalleled comfort.</p>
+        <h3>$1000</h3>
+        <form action="checkout.php" method="post">
+          <input type="hidden" name="class" value="first" />
+          <label for="quantity_first">Quantity:</label>
+          <input
+            type="number"
+            id="quantity_first"
+            name="quantity_first"
+            min="1"
+            value="1"
+          />
+          <button type="submit">Buy Ticket</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Airline Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
